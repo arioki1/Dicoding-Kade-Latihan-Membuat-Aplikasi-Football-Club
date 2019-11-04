@@ -3,9 +3,8 @@ package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
 import com.google.gson.Gson
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
-
 class MainPresenter(
-    private val view: MainActivity.MainView,
+    private val view: MainView,
     private val apiRepository: ApiRepository,
     private val gson: Gson
 ) {
