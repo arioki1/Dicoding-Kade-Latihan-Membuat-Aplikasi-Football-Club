@@ -1,20 +1,26 @@
-package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
+package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.main
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.R
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.api.ApiRepository
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.model.Team
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.util.invisible
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.util.visible
 import com.google.gson.Gson
 import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
 import org.jetbrains.anko.support.v4.onRefresh
 import org.jetbrains.anko.support.v4.swipeRefreshLayout
 
-class MainActivity : AppCompatActivity(), MainView {
+class MainActivity : AppCompatActivity(),
+    MainView {
     private lateinit var listTeam: RecyclerView
     private lateinit var progressBar: ProgressBar
     private lateinit var swipeRefresh: SwipeRefreshLayout
@@ -66,7 +72,11 @@ class MainActivity : AppCompatActivity(), MainView {
 
         val request = ApiRepository()
         val gson = Gson()
-        presenter = MainPresenter(this, request, gson)
+        presenter = MainPresenter(
+            this,
+            request,
+            gson
+        )
 
         val spinnerItems = resources.getStringArray(R.array.league)
         val spinnerAdapter = ArrayAdapter(

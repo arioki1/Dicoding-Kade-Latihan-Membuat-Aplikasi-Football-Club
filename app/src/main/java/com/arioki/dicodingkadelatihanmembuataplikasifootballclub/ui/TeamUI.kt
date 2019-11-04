@@ -1,8 +1,8 @@
-package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
+package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.ui
 
-import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.R
 import org.jetbrains.anko.*
 
 class TeamUI : AnkoComponent<ViewGroup>{

@@ -1,4 +1,4 @@
-package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
+package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.util
 
 import android.view.View
 

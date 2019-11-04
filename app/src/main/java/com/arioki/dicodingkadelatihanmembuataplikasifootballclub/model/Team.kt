@@ -1,4 +1,4 @@
-package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
+package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.model
 
 import com.google.gson.annotations.SerializedName
 

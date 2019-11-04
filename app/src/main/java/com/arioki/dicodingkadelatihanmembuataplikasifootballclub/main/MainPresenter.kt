@@ -1,8 +1,12 @@
-package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
+package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.main
 
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.api.ApiRepository
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.api.TheSportDBApi
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.model.TeamResponse
 import com.google.gson.Gson
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
+
 class MainPresenter(
     private val view: MainView,
     private val apiRepository: ApiRepository,

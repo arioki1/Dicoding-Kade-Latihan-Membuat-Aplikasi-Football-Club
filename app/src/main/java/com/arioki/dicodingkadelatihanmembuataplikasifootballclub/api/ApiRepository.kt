@@ -1,4 +1,4 @@
-package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
+package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.api
 import java.net.URL
 
 class ApiRepository {

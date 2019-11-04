@@ -1,9 +1,11 @@
-package com.arioki.dicodingkadelatihanmembuataplikasifootballclub
+package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.vh
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.R
+import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.model.Team
 import com.squareup.picasso.Picasso
 import org.jetbrains.anko.find
 
