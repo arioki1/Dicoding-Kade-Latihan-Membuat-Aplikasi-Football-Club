@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019
+ * Created by Yoga Setiawan 11/5/19 7:02 AM
+ * github.com/arioki1
+ */
+
 package com.arioki.dicodingkadelatihanmembuataplikasifootballclub.main
 
 import android.view.ViewGroup
@@ -7,8 +13,7 @@ import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.ui.TeamUI
 import com.arioki.dicodingkadelatihanmembuataplikasifootballclub.vh.TeamViewHolder
 import org.jetbrains.anko.AnkoContext
 
-class MainAdapter (private val teams: List<Team>)
-    : RecyclerView.Adapter<TeamViewHolder>(){
+class MainAdapter (private val teams: List<Team>) : RecyclerView.Adapter<TeamViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TeamViewHolder {
         return TeamViewHolder(
             TeamUI().createView(
